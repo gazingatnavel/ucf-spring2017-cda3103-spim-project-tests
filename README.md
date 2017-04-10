@@ -24,10 +24,11 @@ Checking test-spim-itype.asc...PASS!
 Checking test-spim-memry.asc...PASS!
 ```
 If you see a fail message (`fail (output does not match)`):
-1. run the spimcore executable with the test machine code file, issue a `c` command to run to completion,
-2. issue `r` and `m` commands to view register and memory, and
-3. compare the output to the contents of the test output files to determine differences.
+1. run the spimcore executable with the test machine code file, 
+2. issue a `c` command to run to completion,
+3. issue `r` and `m` commands to view register and memory, and
+4. compare the output to the contents of the test output files to determine differences.
 
-The shell script uses the `diff` command to compare the spimcore executable output to the expected output in the test output files. If you are familiar with the `diff` command, you can use it to help find differences between your output and the expected output.
+The shell script uses the `diff` command to compare the spimcore executable output to the expected output in the test files. If you are familiar with the `diff` command, you can use it to help find differences between your output and the expected output.
 
-I believe that the test output files contain the correct expected output, but there's always a chance that I've made and error. Please let me know if you believe there is an error in the files.
+I believe that the test files produce the correct expected output, but there's always a chance that I've made and error. Please let me know if you believe there is an error in the files. If you have a GitHub account and are familiar with pull requests, that's probably the best way to let me know about errors. Otherwise, you can post a comment in the course discussions.
