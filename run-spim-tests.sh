@@ -22,7 +22,7 @@ test-spim-memry"
 for f in $FILES
 do
     # Provide some feedback
-echo -n "Checking $f.asc..."
+    echo -n "Checking $f.asc..."
 
     # Issue commands, followed by newline, saving output to file:
     # c to run all instructions
