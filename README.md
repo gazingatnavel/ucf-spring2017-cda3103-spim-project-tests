@@ -31,4 +31,4 @@ If you see a fail message (`fail (output does not match)`):
 
 The shell script uses the `diff` command to compare the spimcore executable output to the expected output in the test files. If you are familiar with the `diff` command, you can use it to help find differences between your output and the expected output.
 
-I believe that the test files produce the correct expected output, but there's always a chance that I've made and error. Please let me know if you believe there is an error in the files, or if you would like to add some tests of your own. You can post a comment in the course discussions, or if you have a GitHub account and are familiar with pull requests, that would also be a good way to provide input.
+I believe that the test files produce the correct expected output, but there's always a chance that I've made and error. Please let me know if you believe there is an error in the files, or if you would like to add some tests of your own. You can post a comment in the course discussions, or if you have a GitHub account requests, you can submit a pull request.
