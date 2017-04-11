@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script is inpsired by testing scripts provided by Dr. Sean Szumlanski 
+# for COP 3503 Fall 2016 at UCF.
+
 # Variable '$?' is the exit status of a command
 
 # Compile project.c with spimcore.c to produce spimcore.
