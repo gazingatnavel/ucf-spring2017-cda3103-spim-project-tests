@@ -6,7 +6,6 @@
 echo -n "Compiling project files... "
 gcc -o spimcore spimcore.c project.c
 
-
 compile_val=$?
 if [ $compile_val == 0 ]; then
     echo "ok"
