@@ -21,27 +21,27 @@ test-spim-memry"
 
 for f in $FILES
 do
-	# Provide some feedback
-	echo -n "Checking $f.asc..."
+    # Provide some feedback
+echo -n "Checking $f.asc..."
 
-	# Issue commands, followed by newline, saving output to file:
-	# c to run all instructions
-	# r to print registers
-	# m to print memory
-	# q to quit
+    # Issue commands, followed by newline, saving output to file:
+    # c to run all instructions
+    # r to print registers
+    # m to print memory
+    # q to quit
     printf 'c\nr\nm\nh\nq\n' | ./spimcore $f.asc > $f-test-output.txt
 
-	# Verify that program ran without error
-	execute_val=$?
-	if [ $execute_val != 0 ]; then
-		echo "fail (program crashed)"
-		exit 1
-	fi
-	
-	# Compare expected output to output of program
-	diff $f-output.txt $f-test-output.txt  > /dev/null
+    # Verify that program ran without error
+    execute_val=$?
+    if [ $execute_val != 0 ]; then
+        echo "fail (program crashed)"
+        exit 1
+    fi
 
-	# If output not the same print fail, else print PASS
+    # Compare expected output to output of program
+    diff $f-output.txt $f-test-output.txt  > /dev/null
+
+    # If output not the same print fail, else print PASS
     diff_val=$?
     if [ $diff_val != 0 ]; then
         echo "fail (output does not match)"
